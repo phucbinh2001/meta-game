@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "headingFont";
+  src: url(../Fonts/MandatoryPlaything-nRRd0.ttf);
+}
+
+body {
+  background-image: url("../images/BG.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.logo > a > img {
+  width: 150px;
+}
+
+.logo {
+  width: fit-content;
+}
+
+.menu {
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.item img {
+  height: 60px;
+  transition: 0.4s;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.heroes {
+  width: 100%;
+  height: calc(100vh - 150px);
+  position: relative;
+}
+
+.heroes img {
+  position: absolute;
+  width: 350px;
+}
+
+img.hero_1 {
+  left: 20%;
+  top: 30px;
+}
+
+img.hero_2 {
+  right: 3%;
+  top: 22%;
+}
+
+img.hero_3 {
+  bottom: 30px;
+  left: 0;
+}
+
+img.hero_4 {
+  bottom: 30px;
+  left: 40%;
+}
+
+.item:hover .title {
+  background: radial-gradient(rgb(24 86 98 / 100%), rgb(24 86 98 / 0%));
+  color: #2bffff;
+}
+
+.item:hover img {
+  height: 100px;
+}
+
+.title {
+  font-family: "headingFont";
+  color: #38ffff;
+  width: 100%;
+  border: 1px solid #38ffff;
+  text-align: center;
+  margin-top: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: radial-gradient(rgb(24 86 98 / 0%), rgb(24 86 98));
+}
+
+.title:hover {
+  background: radial-gradient(rgb(24 86 98 / 100%), rgb(24 86 98 / 0%));
+  color: #2bffff;
+}
