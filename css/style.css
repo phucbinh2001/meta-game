@@ -57,6 +57,10 @@ body {
   width: 350px;
 }
 
+.logo_mobile {
+  display: none;
+}
+
 img.hero_1 {
   left: 20%;
   top: 30px;
@@ -101,4 +105,85 @@ img.hero_4 {
 .title:hover {
   background: radial-gradient(rgb(24 86 98 / 100%), rgb(24 86 98 / 0%));
   color: #2bffff;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+
+  .logo,
+  .logo-section {
+    display: none;
+  }
+
+  .item {
+    margin: 10px;
+    width: max-content;
+  }
+
+  .item img {
+    height: 50px;
+  }
+
+  .item .title {
+    font-size: 10px;
+    width: max-content;
+  }
+
+  .item:hover img {
+    height: 50px !important;
+  }
+
+  .heroes img {
+    width: 45%;
+  }
+
+  .menu {
+    padding-left: 0;
+    width: 100vw;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    background: rgb(0 108 255 / 7%);
+}
+
+  }
+
+  .title {
+    width: max-content;
+  }
+
+  img.hero_1 {
+    left: 0%;
+    top: 100px;
+  }
+
+  img.hero_2 {
+    right: 0%;
+    top: 22%;
+  }
+
+  img.hero_3 {
+    bottom: 100px;
+    left: 0;
+  }
+
+  img.hero_4 {
+    bottom: 80px;
+    right: 0% !important;
+    left: unset;
+  }
+
+  .heroes {
+    height: 80vh;
+  }
+
+  .logo_mobile {
+    display: block;
+    height: auto;
+    margin-top: 10px;
+    width: 75px !important;
+  }
 }
